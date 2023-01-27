@@ -98,6 +98,8 @@ img {
   color: var(--main-color-h);
   text-decoration: none;
   padding: var(--padding-nav);
+
+  transition: color var(--hover-time), color var(--hover-time);
 }
 
 .nav-list {
@@ -141,9 +143,13 @@ img {
 
   font-style: normal;
   padding: var(--padding-nav);
+
+  transition: color var(--hover-time), color var(--hover-time);
 }
+.header-link:hover,
+.header-link:focus,
 .link:hover,
-.link:focus {
+.link:hover {
   color: var(--button-hover);
 }
 
@@ -227,7 +233,8 @@ img {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 
-  transition: background var(--hover-time), color var(--hover-time);
+  transition: background var(--hover-time), color var(--hover-time),
+    border var(--hover-time), box-shadow var(--hover-time);
 }
 
 .hero button:hover,
@@ -333,14 +340,13 @@ img {
   height: 100%;
 
   background: rgba(46, 47, 66, 0.4);
-
-  visibility: visible;
   opacity: 1;
   scale: 1;
-  transition: scale var(--hover-time);
+  transition: scale var(--hover-time), visibility var(--hover-time),
+    opacity var(--hover-time);
 }
 
-.backdrop.is-hidden {
+.is-hidden {
   visibility: hidden;
   opacity: 0;
   scale: 0;
@@ -377,13 +383,11 @@ img {
 
   background-repeat: no-repeat;
   background-position: center;
-
-  transition: background var(--hover-time);
+  cursor: pointer;
 }
 
 .button-modal {
   background-color: #e7e9fc;
-  transition: background var(--hover-time);
 }
 
 .button-modal:hover,
@@ -512,7 +516,7 @@ a:focus {
   justify-content: center;
   color: #8e8f99;
 
-  transition: color var(--hover-time);
+  transition: color var(--hover-time), border var(--hover-time);
 }
 
 .customers-icon {
