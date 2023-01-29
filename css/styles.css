@@ -99,7 +99,7 @@ img {
   text-decoration: none;
   padding: var(--padding-nav);
 
-  transition: color var(--hover-time), color var(--hover-time);
+  transition: color var(--hover-time);
 }
 
 .nav-list {
@@ -144,7 +144,7 @@ img {
   font-style: normal;
   padding: var(--padding-nav);
 
-  transition: color var(--hover-time), color var(--hover-time);
+  transition: color var(--hover-time);
 }
 .header-link:hover,
 .header-link:focus,
@@ -234,7 +234,7 @@ img {
   border-radius: 4px;
 
   transition: background var(--hover-time), color var(--hover-time),
-    border var(--hover-time), box-shadow var(--hover-time);
+    border-color var(--hover-time), box-shadow var(--hover-time);
 }
 
 .hero button:hover,
@@ -516,7 +516,7 @@ a:focus {
   justify-content: center;
   color: #8e8f99;
 
-  transition: color var(--hover-time), border var(--hover-time);
+  transition: color var(--hover-time), border-color var(--hover-time);
 }
 
 .customers-icon {
